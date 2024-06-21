@@ -1,0 +1,48 @@
+{
+	"name": "Folha de eventos 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "jsjsjsjssjjs",
+					"sid": 435762856547402
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 720881656694182,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 644327814144751
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 991824234445280
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Áudio",
+					"sid": 312377733342357,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 683949423517016
+		}
+	],
+	"sid": 221833032839700
+}

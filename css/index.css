@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .header {
+    background-color: #386641;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    color: white;
+    
+  }
+  .header a{
+    padding-right: 80% !important;
+    color:white;
+  }
+.dropdown-menu li a{
+ color: #386641 !important;
+}
+  .navbar{
+    --bs-navbar-active-color: #f8f9fa;
+    --bs-navbar-color: #f8f9fa;
+  }
+  .navbarimg{
+    width: 60px;
+    display: inline-block;
+    padding-top: -20px;
+  }
+  
+  footer {
+    padding: 10px;
+    color: white;
+    background: #386641;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  main {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f2e8cf;
+  }
+  
+  .carrosel {
+    box-shadow: 5px 5px 10px black;
+    overflow: hidden;
+    height: fit-content;
+    width: 100%;
+    padding-top: 100px;
+    position: relative;
+  
+  }
+  
+  .card-h{
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+     margin-left: 20px;
+    margin-right: 20px;
+    background-color: #f2e8cf;
+  }
+  
+  .container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    align-items: center;
+    width: 10%;
+    
+  }
+  
+  .carrosel .container img {
+    object-fit: cover;
+    height: 550px;
+    width: 1514px;
+    
+  }
+  
+  .carrosel .container img:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    position: center;
+    background-color: #f2e8cf;
+  }
+  
+  .card-body {
+    background-color: #52796f;
+    height: fit-content;
+  }
+  
+  .card-text {
+    color: white;
+  }
+  
+  .card-body h5 {
+    color: white;
+  }
+  
+  .card-header {
+    background-color: #386641 !important;
+    color: white !important;
+  }
+  
+  .drop {
+    background-color: #386641;
+  }
+  
+  .center {
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 75px;
+  }
+  .jogos-card{
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+  .col{
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  .col img{
+    height: 400px;
+    width: 100%;
+  }
+  .card-body .card-text button{
+    display: inline-block;
+  }
+  nav{
+    padding-top: 3px;
+  }
+  .card-e{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+    gap: 20px;
+  }
+  .card-e img{
+    width: 100%;
+    height: 300px;
+  }
+  .card-e a img{
+width: 24px;
+height: 24px;
+  }
+  .card-body-e{
+    background-color: #52796f;
+    height: 300px;
+  }
+  
+  
+  @media (max-width:900px){
+    .carrosel .container img{
+      width: 900px;
+    }
+  }
+  @media (max-width: 600px) {
+    .carrosel .container img{
+      width: 600px;
+    }
+  }
+  /*# sourceMappingURL=style.css.map */

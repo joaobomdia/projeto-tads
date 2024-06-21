@@ -1,0 +1,284 @@
+{
+	"name": "Folha de eventos 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "jogador",
+					"sid": 397541628239506,
+					"parameters": {
+						"object": "plataformaEstatica"
+					}
+				},
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "jogador",
+					"sid": 928775025927803,
+					"parameters": {
+						"object": "plataformaMovel"
+					}
+				},
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "jogador",
+					"sid": 644118555758556,
+					"parameters": {
+						"object": "plataformaDestrutiva"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "jogador",
+					"sid": 666651738260144,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"control": "jump"
+					}
+				}
+			],
+			"sid": 488779962751109,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 572137108407031,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "jogador",
+					"sid": 415631456182226,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 911819391417970
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 185883271367346,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "jogador",
+					"sid": 699249806226296,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 551191690919079
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "jogador",
+					"sid": 730364444399691,
+					"parameters": {
+						"object": "plataformaDestrutiva"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 618735265161209,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "jogador",
+							"sid": 233371229834397,
+							"parameters": {
+								"comparison": 2,
+								"y-co-ordinate": "plataformaDestrutiva.Y-30"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "plataformaDestrutiva",
+							"sid": 790599605156786,
+							"parameters": {
+								"animation": "\"laranjado\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 490175072990740,
+							"parameters": {
+								"seconds": "0.4"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "plataformaDestrutiva",
+							"sid": 345024772567156
+						}
+					],
+					"sid": 340910948250239
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "jogador",
+					"sid": 720973682568041,
+					"parameters": {
+						"object": "inimigo"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "jogador",
+					"sid": 558153546157928
+				}
+			],
+			"sid": 303495650446735
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "jogador",
+					"sid": 580414132262668,
+					"parameters": {
+						"object": "morte"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "jogador",
+					"sid": 660600200699573
+				}
+			],
+			"sid": 464879200069631
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "jogador",
+					"sid": 613972906585085
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 285112509376056,
+					"parameters": {
+						"layout": "Layout 2"
+					}
+				}
+			],
+			"sid": 227254505180962
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "jogador",
+					"sid": 642045986919973
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 556293942052125
+				}
+			],
+			"sid": 905425927327603
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "jogador",
+					"sid": 967944507197822,
+					"parameters": {
+						"object": "venceu"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 766593510720539,
+					"parameters": {
+						"layout": "Layout 3"
+					}
+				}
+			],
+			"sid": 297465174903345
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 183461567812849
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 515751206546616,
+					"parameters": {
+						"audio-file": "som joao gui",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 268309820562452
+		}
+	],
+	"sid": 260455339487344
+}

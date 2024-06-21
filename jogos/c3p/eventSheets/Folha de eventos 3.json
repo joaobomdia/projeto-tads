@@ -1,0 +1,48 @@
+{
+	"name": "Folha de eventos 3",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "vcVenceu",
+					"sid": 749218999513795
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 139608594956314,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 776358461835976
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 387473379132207
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Áudio",
+					"sid": 187794791564597,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 636541238200147
+		}
+	],
+	"sid": 262348695181241
+}
