@@ -23,7 +23,7 @@ function carrosel(){
     imgs.style.transform = `translateX(${-idx * offset}px)`;
     
 }
-interval = setInterval(carrosel, 1800);
+interval = setInterval(carrosel, 2000);
 
 document.getElementById('carrossel').addEventListener('mouseenter', stop);
 function stop(){
