@@ -6,9 +6,8 @@
                 <div class="card h-100">
                     <img src="imagens/jogo2.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title">As trilhas do labirinto</h5>
+                        <p class="card-text">Explore a emoção do desconhecido em nosso incrível jogo de labirinto! Teste sua coragem e habilidade enquanto se aventura por intrincados corredores em busca da saída. A cada curva, a tensão aumenta, enfrentando desafios e obstáculos aparentemente simples, porém perigosamente letais.</p>
                         <button type="button" class="btn btn-primary">Jogar Agora</button>
                     </div>
 
